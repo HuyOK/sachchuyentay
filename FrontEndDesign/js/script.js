@@ -4,11 +4,23 @@
 
   var pluginName = 'animate-scroll';
 
+  function tlAboutOnStart(){
+
+  }
+
+ 	function tlLoginOnStart(){
+  
+  }
+
   function Plugin(element, options) {
     this.element = $(element);
     this.options = $.extend({}, $.fn[pluginName].defaults, this.element.data(), options);
-    this.tlAbout = new window.TimelineLite();
-    this.tlLogin = new window.TimelineLite();
+    this.tlAbout = new window.TimelineLite({
+    	onStart: tlAboutOnStart
+    });
+    this.tlLogin = new window.TimelineLite({
+    	onStart: tlLoginOnStart
+    });
     this.tlBlogs = new window.TimelineLite();
     this.tlCreate = new window.TimelineLite();
     this.tlWelcome = new window.TimelineLite();
@@ -72,7 +84,6 @@
     that.vars.isScroll = false;
 
     // kill current animate
-    console.log(indexStart);
     switch(indexStart) {
     	case 1:
     		that.tlLogin.reverse();
@@ -200,9 +211,11 @@
       });
 
       // init animate
-      that.tlLogin.to($('.section--login .section__inner'), 0.5, {top: 0, opacity: 1});
+      that.tlLogin.to($('.section--login .section__inner'), 0.5, {top: 0, opacity: 1})
+      						.to($('.section--login'), 0.5, {'padding-bottom': 45}, 1);
       	
-      that.tlAbout.from($('.icon-about--0'), 0.5, {scale: 0, opacity: 0})
+      that.tlAbout.staggerTo($('.header .account__btn'), 0.5, {left: 0, opacity: 1}, 0.3, 'layer-1')
+    							.from($('.icon-about--0'), 0.5, {scale: 0, opacity: 0})
       						.from($('.icon-about--6'), 1, {opacity: 0, top: 122, ease: window.Power4.easeOut}, 'layer-1')
       						.from($('.icon-about--13'), 1, {opacity: 0, left: 416, ease: window.Power4.easeOut}, 'layer-1')
       						.from($('.icon-about--16'), 1, {opacity: 0, left: 104, ease: window.Power4.easeOut}, 'layer-1')
@@ -394,7 +407,6 @@
       that.vars.swiper = new window.Swiper('[data-swiper-multi-row-slider]', {
       	slidesPerView: 4,
         slidesPerColumn: 2,
-        spaceBetween: 60,
         speed: 1000,
         nextButton: ele.closest('[data-wrap-swiper-multi-row-slider]').find('[data-next]'),
         prevButton: ele.closest('[data-wrap-swiper-multi-row-slider]').find('[data-prev]')
