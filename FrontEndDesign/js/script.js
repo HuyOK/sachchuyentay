@@ -387,6 +387,67 @@
 ;(function($, window, undefined) {
   'use strict';
 
+  var pluginName = 'scroll-header';
+
+  function Plugin(element, options) {
+    this.element = $(element);
+    this.options = $.extend({}, $.fn[pluginName].defaults, this.element.data(), options);
+    this.init();
+  }
+
+  Plugin.prototype = {
+    init: function() {
+      var that = this,
+      		options = that.options,
+        	ele = that.element,
+        	scroll,
+        	win = $(window);
+
+    	scroll = win.scrollTop();
+    	if(scroll > 0) {
+    		ele.addClass(options.class);
+    	} else {
+    		ele.removeClass(options.class);
+    	}
+
+      win.scroll(function(){
+      	scroll = $(this).scrollTop();
+      	if(scroll > 0) {
+      		ele.addClass(options.class);
+      	} else {
+      		ele.removeClass(options.class);
+      	}
+      });
+    },
+    destroy: function() {
+      $.removeData(this.element[0], pluginName);
+    }
+  };
+
+  $.fn[pluginName] = function(options, params) {
+    return this.each(function() {
+      var instance = $.data(this, pluginName);
+      if (!instance) {
+        $.data(this, pluginName, new Plugin(this, options));
+      } else if (instance[options]) {
+        instance[options](params);
+      }
+    });
+  };
+
+  $.fn[pluginName].defaults = {
+  	type: '',
+  	class: ''
+  };
+
+  $(function() {
+    $('[data-' + pluginName + ']')[pluginName]();
+  });
+
+}(jQuery, window));
+;(function($, window, undefined) {
+  'use strict';
+
   var pluginName = 'swiper-multi-row-slider';
 
   function Plugin(element, options) {

@@ -19,7 +19,7 @@
   </head>
   <body>
     <div class="container">
-      <header class="header">
+      <header class="header header--border-bottom" data-scroll-header data-type="content" data-class="header--blue">
         <div class="grid">
           <div class="header__inner"><a class="logo" href="#" title="Sách chuyền tay">
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewbox="0 0 39.75 39.75" enable-background="new 0 0 39.75 39.75" xml:space="preserve">
@@ -93,7 +93,92 @@
                 </div>
               </div>
             </form>
-            <div class="account"><a class="account__btn account__btn--black" href="#" title="Đăng ký">Đăng ký</a><a class="account__btn" href="#" title="Đăng nhập">Đăng nhập</a></div>
+            <div class="account">
+              <ul class="icons">
+                <li><a class="icon icon--home" href="#" title="Home">
+                          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewbox="0 0 409.602 345.602" enable-background="new 0 0 409.602 345.602" xml:space="preserve">
+                            <g>
+                              <path d="M409.602,204.801L332.801,128V12.801h-51.199v64L204.801,0L0,204.801v12.801h51.199v128h128v-76.801h51.2v76.801h128v-128									h51.203V204.801z M409.602,204.801"></path>
+                            </g>
+                          </svg></a>
+                </li>
+                <li><a class="icon icon--ring" href="#" title="Notification">
+                          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewbox="0 0 285.84 368.879" enable-background="new 0 0 285.84 368.879" xml:space="preserve">
+                            <g>
+                              <g>
+                                <defs>
+                                  <rect id="RING_1" width="285.84" height="368.879"></rect>
+                                </defs>
+                                <clippath id="RING_2">
+                                  <use xlink:href="#RING_1" overflow="visible"></use>
+                                </clippath>
+                                <path clip-path="url(#RING_2)" d="M98.977,324.063c0,0.098-0.004,0.191-0.004,0.289c0,24.063,19.504,43.57,43.566,43.57										c24.063,0,43.57-19.508,43.57-43.57c0-0.098-0.008-0.191-0.008-0.289H98.977z M98.977,324.063"></path>
+                                <path clip-path="url(#RING_2)" d="M281.645,269.605L242.434,212v-71.864c0-48.464-34.516-88.863-80.305-97.964V20.043										c-0.004-10.821-8.773-19.59-19.59-19.59c-10.82,0-19.59,8.77-19.59,19.59v22.129C77.16,51.277,42.645,91.675,42.645,140.14v71.864										L3.434,269.605c-4.129,6.066-4.567,13.918-1.133,20.406c3.429,6.488,10.168,10.547,17.508,10.547h245.46										c7.34,0,14.078-4.059,17.508-10.547C286.211,283.523,285.773,275.672,281.645,269.605L281.645,269.605z M281.645,269.605"></path>
+                              </g>
+                            </g>
+                          </svg></a>
+                </li>
+                <li><a class="icon icon--email" href="#" title="Email">
+                          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewbox="0 0 11.199 8" enable-background="new 0 0 11.199 8" xml:space="preserve">
+                            <g>
+                              <path d="M5.602,5.603L4.215,4.387L0.254,7.781C0.398,7.918,0.59,8,0.805,8h9.589c0.215,0,0.406-0.082,0.551-0.219L6.984,4.387									L5.602,5.603z M5.602,5.603"></path>
+                              <path d="M10.945,0.219C10.805,0.082,10.609,0,10.395,0H0.805C0.594,0,0.398,0.082,0.254,0.219l5.348,4.582L10.945,0.219z									M10.945,0.219"></path>
+                              <path d="M0,0.703v6.646l3.867-3.286L0,0.703z M0,0.703"></path>
+                              <path d="M7.332,4.063l3.867,3.286V0.699L7.332,4.063z M7.332,4.063"></path>
+                            </g>
+                          </svg></a>
+                </li>
+                <li><a class="icon icon--book" href="#" title="Book">
+                          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewbox="0 0 108.959 101" enable-background="new 0 0 108.959 101" xml:space="preserve">
+                            <g>
+                              <g>
+                                <defs>
+                                  <rect id="BOOK_1" width="108.959" height="101"></rect>
+                                </defs>
+                                <clippath id="BOOK_2">
+                                  <use xlink:href="#BOOK_1" overflow="visible"></use>
+                                </clippath>
+                                <path clip-path="url(#BOOK_2)" d="M106.859,22.813c-0.91-1.219-2.195-2.153-3.848-2.805c0.09,1.523-0.02,2.762-0.324,3.719										L83.133,88.059c-0.348,1.129-1.109,2.031-2.281,2.703s-2.387,1.012-3.648,1.012h-60.16c-5.215,0-8.34-1.52-9.383-4.563										c-0.437-1.176-0.414-2.109,0.063-2.805c0.48-0.652,1.304-0.977,2.476-0.977H66.84c4.043,0,6.836-0.75,8.375-2.25										c1.547-1.5,3.098-4.836,4.664-10.004l17.855-59.055c0.957-3.215,0.566-6.039-1.172-8.472C94.824,1.219,92.348,0,89.133,0H39.531										c-0.566,0-1.672,0.196-3.324,0.586l0.066-0.195c-1.218-0.262-2.25-0.379-3.097-0.36c-0.848,0.024-1.629,0.274-2.348,0.75										c-0.715,0.481-1.289,0.989-1.726,1.532c-0.434,0.543-0.856,1.238-1.27,2.086c-0.414,0.847-0.762,1.632-1.043,2.347										c-0.281,0.719-0.609,1.477-0.977,2.282c-0.371,0.804-0.726,1.468-1.078,1.988c-0.257,0.347-0.629,0.805-1.105,1.371										c-0.477,0.562-0.871,1.062-1.172,1.496c-0.305,0.438-0.5,0.828-0.59,1.176c-0.086,0.39-0.043,0.965,0.133,1.726										c0.172,0.758,0.238,1.313,0.195,1.661c-0.175,1.652-0.773,3.75-1.793,6.289c-1.019,2.543-1.945,4.378-2.769,5.507										c-0.176,0.219-0.653,0.707-1.434,1.469c-0.781,0.758-1.261,1.422-1.433,1.988c-0.176,0.215-0.184,0.825-0.036,1.825										c0.153,1,0.211,1.695,0.165,2.086c-0.172,1.476-0.715,3.429-1.629,5.863c-0.914,2.433-1.825,4.433-2.739,5.996										c-0.129,0.262-0.5,0.762-1.105,1.5c-0.61,0.738-0.981,1.348-1.11,1.824c-0.085,0.348-0.074,0.957,0.032,1.828										c0.109,0.867,0.097,1.52-0.032,1.953c-0.347,1.648-1,3.637-1.957,5.965c-0.953,2.324-1.933,4.313-2.933,5.961										c-0.258,0.438-0.617,0.945-1.074,1.531c-0.457,0.59-0.813,1.098-1.075,1.531C1.012,72,0.84,72.457,0.75,72.934										c-0.043,0.262,0.023,0.684,0.199,1.27c0.172,0.586,0.239,1.055,0.196,1.402c-0.047,0.609-0.133,1.414-0.262,2.414										c-0.133,1-0.195,1.582-0.195,1.758c-0.958,2.609-0.915,5.367,0.128,8.277c1.215,3.391,3.379,6.246,6.485,8.574										c3.109,2.324,6.332,3.484,9.679,3.484h60.161c2.824,0,5.484-0.945,7.984-2.836c2.496-1.891,4.16-4.223,4.984-7.008l17.922-59.051										C108.988,28.09,108.598,25.289,106.859,22.813L106.859,22.813z M37.512,22.942l1.367-4.172c0.176-0.563,0.531-1.051,1.074-1.465										s1.098-0.621,1.664-0.621h39.629c0.609,0,1.043,0.207,1.305,0.621c0.258,0.414,0.305,0.902,0.129,1.465l-1.367,4.172										c-0.176,0.566-0.535,1.054-1.078,1.468c-0.543,0.411-1.098,0.618-1.66,0.618H38.945c-0.609,0-1.043-0.207-1.304-0.618										C37.379,23.996,37.336,23.508,37.512,22.942L37.512,22.942z M32.102,39.629l1.367-4.172c0.176-0.566,0.531-1.054,1.078-1.465										c0.543-0.414,1.094-0.621,1.66-0.621h39.629c0.609,0,1.043,0.207,1.305,0.621c0.258,0.411,0.305,0.899,0.129,1.465l-1.371,4.172										c-0.172,0.563-0.531,1.051-1.074,1.465s-1.098,0.621-1.66,0.621H33.535c-0.609,0-1.043-0.207-1.305-0.621										C31.973,40.68,31.926,40.192,32.102,39.629L32.102,39.629z M32.102,39.629"></path>
+                              </g>
+                            </g>
+                          </svg></a>
+                </li>
+                <li><a class="icon icon--storm" href="#" title="Notification">
+                          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewbox="0 0 256 410.879" enable-background="new 0 0 256 410.879" xml:space="preserve">
+                            <g>
+                              <g>
+                                <defs>
+                                  <rect id="STORM_1" width="255.84" height="410.879"></rect>
+                                </defs>
+                                <clippath id="STORM_2">
+                                  <use xlink:href="#STORM_1" overflow="visible"></use>
+                                </clippath>
+                                <path clip-path="url(#STORM_2)" d="M252.793,167.108c-4.512-8.137-13.086-13.188-22.395-13.188h-61.773l10.488-125.875										c0.969-11.637-6.059-22.449-17.082-26.301c-11.012-3.836-23.258,0.262-29.73,9.978l-128,192										c-5.239,7.855-5.727,17.957-1.27,26.281c4.449,8.324,13.125,13.516,22.567,13.516h61.957l-10.68,138.84										c-0.906,11.75,6.328,22.598,17.531,26.281c2.629,0.867,5.328,1.281,7.992,1.281c8.637,0,16.93-4.395,21.707-12.031l128-204.801										C257.043,185.194,257.301,175.252,252.793,167.108L252.793,167.108z M252.793,167.108"></path>
+                              </g>
+                            </g>
+                          </svg></a>
+                </li>
+                <li><a class="icon icon--location" href="#" title="Location">
+                          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewbox="0 0 20.047 29.688" enable-background="new 0 0 20.047 29.688" xml:space="preserve">
+                            <g>
+                              <path d="M20.047,10.024C20.047,4.489,15.559,0,10.024,0C4.489,0,0,4.489,0,10.024c0,7.93,10.024,19.664,10.024,19.664									S20.047,17.911,20.047,10.024L20.047,10.024z M5.083,9.422c0-2.73,2.21-4.941,4.941-4.941c2.73,0,4.945,2.211,4.945,4.941									c0,2.731-2.215,4.946-4.945,4.946C7.293,14.368,5.083,12.153,5.083,9.422L5.083,9.422z M5.083,9.422"></path>
+                              <path d="M12.454,9.422c0,1.344-1.085,2.434-2.43,2.434c-1.344,0-2.43-1.09-2.43-2.434c0-1.34,1.086-2.429,2.43-2.429									C11.368,6.993,12.454,8.082,12.454,9.422L12.454,9.422z M12.454,9.422"></path>
+                            </g>
+                          </svg></a>
+                </li>
+                <li><a class="icon icon--user" href="#" title="User">
+                          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewbox="0 0 174 190" enable-background="new 0 0 174 190" xml:space="preserve">
+                            <path d="M135,48c0,26.508-21.492,48-48,48S39,74.508,39,48S60.492,0,87,0S135,21.492,135,48L135,48z M135,48"></path>
+                            <path d="M87,103c-48.047,0-87,38.953-87,87h174C174,141.953,135.047,103,87,103L87,103z M87,103"></path>
+                          </svg></a>
+                </li>
+                <li class="active"><a class="icon icon--edit" href="#" title="Edit">
+                          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewbox="0 0 48.479 48.477" enable-background="new 0 0 48.479 48.477" xml:space="preserve">
+                            <path fill="#020202" d="M47.446,11.889l-3.895,3.894L32.692,4.928l3.898-3.899c1.227-1.226,3.074-1.378,4.117-0.339l7.078,7.082								C48.829,8.815,48.677,10.658,47.446,11.889L47.446,11.889z M12.259,25.361L30.884,6.736l10.855,10.86L15.849,43.487								c-0.117,0.117-0.445,0.445-0.91,0.566c-0.055,0.023-0.105,0.047-0.16,0.063L1.267,48.42c-0.379,0.121-0.762,0.047-1.008-0.203								c-0.246-0.246-0.324-0.625-0.203-1.004L4.36,33.702c0.02-0.055,0.039-0.109,0.066-0.16c0.117-0.465,0.445-0.793,0.566-0.914								l4.867-4.864 M12.509,42.651l-6.684-6.684l-1.793,5.629l2.852,2.848L12.509,42.651z M30.466,11.053								c-0.383-0.387-1.008-0.387-1.391,0L8.892,31.237c-0.387,0.383-0.387,1.008,0,1.391c0.383,0.383,1.008,0.383,1.391,0l20.184-20.184								C30.849,12.061,30.849,11.436,30.466,11.053L30.466,11.053z M19.024,14.639"></path>
+                          </svg></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -471,6 +556,143 @@
             </div>
           </div>
         </section>
+        <section class="section section--static section--time" data-section data-index="10">
+          <div class="table table--full-screen">
+            <div class="table__table-cell table__table-cell--middle">
+              <div class="grid">
+                <div class="section__inner">
+                  <ul class="tabs">
+                    <li class="tab tab--black-opacity"> <span>SÁCH QUÁ HẠN TRẢ</span></li>
+                    <li class="tab tab--white-opacity"> <span>SÁCH PHẢI ĐÒI</span></li>
+                  </ul>
+                  <div class="time">
+                    <p class="time__note">BAN QUẢN TRỊ SẼ GỬI TIN NHẮC NHỞ NẾU QUÁ 3 NGÀY</p>
+                    <div class="list list--books">
+                      <div class="list__inner" data-wrap-swiper-slider>
+                        <div class="swiper-button-next" data-next></div>
+                        <div class="swiper-button-prev" data-prev></div>
+                        <div class="swiper-container" data-swiper-slider>
+                          <div class="swiper-wrapper">
+                            <div class="item swiper-slide">
+                              <div class="item__inner">
+                                <div class="item__image"><img src="images/upload/img-1.jpg" alt="">
+                                </div>
+                                <div class="item__information">
+                                  <p class="item__time"><a href="#" title="YÊU CẦU GIA HẠN">YÊU CẦU GIA HẠN</a>
+                                  </p>
+                                  <div class="item__book"><a href="#" title="You can win - Bí quyết của người chiến thắng">
+                                            <div class="item__small-image"><img src="images/upload/img-45.png" alt="">
+                                            </div>
+                                            <div class="item__title">You can win - <br/> Bí quyết của người chiến thắng</div></a>
+                                  </div>
+                                  <div class="item__user">
+                                    <div class="item__chooser">
+                                       Cho mượn bởi<a href="#" title="Cường Max">Cường Max</a>
+                                    </div>
+                                    <div class="item__mobile"><a href="#" title="Location"><img src="images/icons/icon-location-black.png" alt=""></a><a href="#" title="Phone"><img src="images/icons/icon-phone-black.png" alt=""></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="item swiper-slide">
+                              <div class="item__inner">
+                                <div class="item__image"><img src="images/upload/img-1.jpg" alt="">
+                                </div>
+                                <div class="item__information">
+                                  <p class="item__time"><a href="#" title="YÊU CẦU GIA HẠN">YÊU CẦU GIA HẠN</a>
+                                  </p>
+                                  <div class="item__book"><a href="#" title="You can win - Bí quyết của người chiến thắng">
+                                            <div class="item__small-image"><img src="images/upload/img-45.png" alt="">
+                                            </div>
+                                            <div class="item__title">You can win - <br/> Bí quyết của người chiến thắng</div></a>
+                                  </div>
+                                  <div class="item__user">
+                                    <div class="item__chooser">
+                                       Cho mượn bởi<a href="#" title="Cường Max">Cường Max</a>
+                                    </div>
+                                    <div class="item__mobile"><a href="#" title="Location"><img src="images/icons/icon-location-black.png" alt=""></a><a href="#" title="Phone"><img src="images/icons/icon-phone-black.png" alt=""></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="item swiper-slide">
+                              <div class="item__inner">
+                                <div class="item__image"><img src="images/upload/img-1.jpg" alt="">
+                                </div>
+                                <div class="item__information">
+                                  <p class="item__time"><a href="#" title="YÊU CẦU GIA HẠN">YÊU CẦU GIA HẠN</a>
+                                  </p>
+                                  <div class="item__book"><a href="#" title="You can win - Bí quyết của người chiến thắng">
+                                            <div class="item__small-image"><img src="images/upload/img-45.png" alt="">
+                                            </div>
+                                            <div class="item__title">You can win - <br/> Bí quyết của người chiến thắng</div></a>
+                                  </div>
+                                  <div class="item__user">
+                                    <div class="item__chooser">
+                                       Cho mượn bởi<a href="#" title="Cường Max">Cường Max</a>
+                                    </div>
+                                    <div class="item__mobile"><a href="#" title="Location"><img src="images/icons/icon-location-black.png" alt=""></a><a href="#" title="Phone"><img src="images/icons/icon-phone-black.png" alt=""></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="item swiper-slide">
+                              <div class="item__inner">
+                                <div class="item__image"><img src="images/upload/img-1.jpg" alt="">
+                                </div>
+                                <div class="item__information">
+                                  <p class="item__time"><a href="#" title="YÊU CẦU GIA HẠN">YÊU CẦU GIA HẠN</a>
+                                  </p>
+                                  <div class="item__book"><a href="#" title="You can win - Bí quyết của người chiến thắng">
+                                            <div class="item__small-image"><img src="images/upload/img-45.png" alt="">
+                                            </div>
+                                            <div class="item__title">You can win - <br/> Bí quyết của người chiến thắng</div></a>
+                                  </div>
+                                  <div class="item__user">
+                                    <div class="item__chooser">
+                                       Cho mượn bởi<a href="#" title="Cường Max">Cường Max</a>
+                                    </div>
+                                    <div class="item__mobile"><a href="#" title="Location"><img src="images/icons/icon-location-black.png" alt=""></a><a href="#" title="Phone"><img src="images/icons/icon-phone-black.png" alt=""></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="item swiper-slide">
+                              <div class="item__inner">
+                                <div class="item__image"><img src="images/upload/img-1.jpg" alt="">
+                                </div>
+                                <div class="item__information">
+                                  <p class="item__time"><a href="#" title="YÊU CẦU GIA HẠN">YÊU CẦU GIA HẠN</a>
+                                  </p>
+                                  <div class="item__book"><a href="#" title="You can win - Bí quyết của người chiến thắng">
+                                            <div class="item__small-image"><img src="images/upload/img-45.png" alt="">
+                                            </div>
+                                            <div class="item__title">You can win - <br/> Bí quyết của người chiến thắng</div></a>
+                                  </div>
+                                  <div class="item__user">
+                                    <div class="item__chooser">
+                                       Cho mượn bởi<a href="#" title="Cường Max">Cường Max</a>
+                                    </div>
+                                    <div class="item__mobile"><a href="#" title="Location"><img src="images/icons/icon-location-black.png" alt=""></a><a href="#" title="Phone"><img src="images/icons/icon-phone-black.png" alt=""></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <section class="section section--static section--status-approve-books" data-section data-index="5">
           <div class="table table--full-screen">
             <div class="table__table-cell table__table-cell--middle">
@@ -505,6 +727,15 @@
                         </div>
                       </div>
                     </div>
+                  </div>
+                  <div class="user user--no-content">
+                    <div class="user__inner"></div>
+                  </div>
+                  <div class="user user--no-content">
+                    <div class="user__inner"></div>
+                  </div>
+                  <div class="user user--no-content">
+                    <div class="user__inner"></div>
                   </div>
                 </div>
                 <div class="books-of-user">
@@ -843,143 +1074,6 @@
             </div>
           </div>
         </section>
-        <section class="section section--static section--time" data-section data-index="10">
-          <div class="table table--full-screen">
-            <div class="table__table-cell table__table-cell--middle">
-              <div class="grid">
-                <div class="section__inner">
-                  <ul class="tabs">
-                    <li class="tab tab--black-opacity"> <span>SÁCH QUÁ HẠN TRẢ</span></li>
-                    <li class="tab tab--white-opacity"> <span>SÁCH PHẢI ĐÒI</span></li>
-                  </ul>
-                  <div class="time">
-                    <p class="time__note">BAN QUẢN TRỊ SẼ GỬI TIN NHẮC NHỞ NẾU QUÁ 3 NGÀY</p>
-                    <div class="list list--books">
-                      <div class="list__inner" data-wrap-swiper-slider>
-                        <div class="swiper-button-next" data-next></div>
-                        <div class="swiper-button-prev" data-prev></div>
-                        <div class="swiper-container" data-swiper-slider>
-                          <div class="swiper-wrapper">
-                            <div class="item swiper-slide">
-                              <div class="item__inner">
-                                <div class="item__image"><img src="images/upload/img-1.jpg" alt="">
-                                </div>
-                                <div class="item__information">
-                                  <p class="item__time"><a href="#" title="YÊU CẦU GIA HẠN">YÊU CẦU GIA HẠN</a>
-                                  </p>
-                                  <div class="item__book"><a href="#" title="You can win - Bí quyết của người chiến thắng">
-                                            <div class="item__small-image"><img src="images/upload/img-45.png" alt="">
-                                            </div>
-                                            <div class="item__title">You can win - <br/> Bí quyết của người chiến thắng</div></a>
-                                  </div>
-                                  <div class="item__user">
-                                    <div class="item__chooser">
-                                       Cho mượn bởi<a href="#" title="Cường Max">Cường Max</a>
-                                    </div>
-                                    <div class="item__mobile"><a href="#" title="Location"><img src="images/icons/icon-location-black.png" alt=""></a><a href="#" title="Phone"><img src="images/icons/icon-phone-black.png" alt=""></a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="item swiper-slide">
-                              <div class="item__inner">
-                                <div class="item__image"><img src="images/upload/img-1.jpg" alt="">
-                                </div>
-                                <div class="item__information">
-                                  <p class="item__time"><a href="#" title="YÊU CẦU GIA HẠN">YÊU CẦU GIA HẠN</a>
-                                  </p>
-                                  <div class="item__book"><a href="#" title="You can win - Bí quyết của người chiến thắng">
-                                            <div class="item__small-image"><img src="images/upload/img-45.png" alt="">
-                                            </div>
-                                            <div class="item__title">You can win - <br/> Bí quyết của người chiến thắng</div></a>
-                                  </div>
-                                  <div class="item__user">
-                                    <div class="item__chooser">
-                                       Cho mượn bởi<a href="#" title="Cường Max">Cường Max</a>
-                                    </div>
-                                    <div class="item__mobile"><a href="#" title="Location"><img src="images/icons/icon-location-black.png" alt=""></a><a href="#" title="Phone"><img src="images/icons/icon-phone-black.png" alt=""></a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="item swiper-slide">
-                              <div class="item__inner">
-                                <div class="item__image"><img src="images/upload/img-1.jpg" alt="">
-                                </div>
-                                <div class="item__information">
-                                  <p class="item__time"><a href="#" title="YÊU CẦU GIA HẠN">YÊU CẦU GIA HẠN</a>
-                                  </p>
-                                  <div class="item__book"><a href="#" title="You can win - Bí quyết của người chiến thắng">
-                                            <div class="item__small-image"><img src="images/upload/img-45.png" alt="">
-                                            </div>
-                                            <div class="item__title">You can win - <br/> Bí quyết của người chiến thắng</div></a>
-                                  </div>
-                                  <div class="item__user">
-                                    <div class="item__chooser">
-                                       Cho mượn bởi<a href="#" title="Cường Max">Cường Max</a>
-                                    </div>
-                                    <div class="item__mobile"><a href="#" title="Location"><img src="images/icons/icon-location-black.png" alt=""></a><a href="#" title="Phone"><img src="images/icons/icon-phone-black.png" alt=""></a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="item swiper-slide">
-                              <div class="item__inner">
-                                <div class="item__image"><img src="images/upload/img-1.jpg" alt="">
-                                </div>
-                                <div class="item__information">
-                                  <p class="item__time"><a href="#" title="YÊU CẦU GIA HẠN">YÊU CẦU GIA HẠN</a>
-                                  </p>
-                                  <div class="item__book"><a href="#" title="You can win - Bí quyết của người chiến thắng">
-                                            <div class="item__small-image"><img src="images/upload/img-45.png" alt="">
-                                            </div>
-                                            <div class="item__title">You can win - <br/> Bí quyết của người chiến thắng</div></a>
-                                  </div>
-                                  <div class="item__user">
-                                    <div class="item__chooser">
-                                       Cho mượn bởi<a href="#" title="Cường Max">Cường Max</a>
-                                    </div>
-                                    <div class="item__mobile"><a href="#" title="Location"><img src="images/icons/icon-location-black.png" alt=""></a><a href="#" title="Phone"><img src="images/icons/icon-phone-black.png" alt=""></a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="item swiper-slide">
-                              <div class="item__inner">
-                                <div class="item__image"><img src="images/upload/img-1.jpg" alt="">
-                                </div>
-                                <div class="item__information">
-                                  <p class="item__time"><a href="#" title="YÊU CẦU GIA HẠN">YÊU CẦU GIA HẠN</a>
-                                  </p>
-                                  <div class="item__book"><a href="#" title="You can win - Bí quyết của người chiến thắng">
-                                            <div class="item__small-image"><img src="images/upload/img-45.png" alt="">
-                                            </div>
-                                            <div class="item__title">You can win - <br/> Bí quyết của người chiến thắng</div></a>
-                                  </div>
-                                  <div class="item__user">
-                                    <div class="item__chooser">
-                                       Cho mượn bởi<a href="#" title="Cường Max">Cường Max</a>
-                                    </div>
-                                    <div class="item__mobile"><a href="#" title="Location"><img src="images/icons/icon-location-black.png" alt=""></a><a href="#" title="Phone"><img src="images/icons/icon-phone-black.png" alt=""></a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
         <div class="popup popup--approve-books" id="popup-approve-books">
           <div class="popup__inner" data-over>
             <div class="popup-body">
@@ -1044,6 +1138,80 @@
           </div>
         </div>
       </main>
+      <footer>
+        <div class="footer-nav">
+          <div class="grid"><a class="logo" href="#" title="Logo">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewbox="0 0 220.305 64.734" enable-background="new 0 0 220.305 64.734" xml:space="preserve">
+                      <g>
+                        <path fill="#468071" d="M100.832,5.625L106.457,0h14.551v0.75h-13.801v4.875h13.801v0.75h-13.801v3.301h10.391l5.625,5.625v5.324						l-5.625,5.625h-14.813V25.5h14.063v-4.875h-14.063v-0.75h14.063v-3.824h-10.391l-5.625-5.625V5.625z M107.207,10.426v4.875h9.641						v-4.875H107.207z M117.598,16.051v3.824h4.875v-3.824H117.598z M101.582,6.375v3.301h4.875V6.375H101.582z M101.883,10.426						L106.457,15v-4.574H101.883z M122.172,15.301l-4.574-4.574v4.574H122.172z M122.172,20.625h-4.574v4.578L122.172,20.625z						M101.922,5.625h4.535V1.09L101.922,5.625z M101.922,5.625"></path>
+                        <path fill="#468071" d="M9.785,48.805c0-2.723-2.422-3.758-4.492-4.645c-2.871-1.27-5.176-2.809-5.176-5.676						c0-2.484,1.805-4.734,5.352-4.734c2.25,0,2.898,0.652,3.578,0.652c0.297,0,0.504,0,0.652-0.414h0.563l0.176,3.695l-0.356-0.027						c-0.234-0.031-0.324-0.09-0.441-0.355c-0.684-1.508-2.278-2.867-4.321-2.867c-2.156,0-3.398,1.535-3.398,3.309						c0,2.129,1.359,3.078,3.754,4.199c2.515,1.184,6.179,2.484,6.179,6.063c0,2.988-2.75,4.941-5.793,4.941						c-2.335,0-3.578-1.098-4.378-1.098c-0.356,0-0.68,0.27-0.797,0.684H0.234L0,48.598h0.59c0.148,0,0.207,0.117,0.355,0.383						c0.797,1.598,2.219,3.254,4.91,3.254C8.34,52.234,9.785,50.785,9.785,48.805L9.785,48.805z M28.535,50.547						c0.266,0.801,0.207,1.273,2.453,1.48v0.563c-2.008-0.09-4.258-0.09-6.269,0v-0.563c2.484-0.238,1.836-0.711,1.39-1.895						l-1.359-3.727h-7.066l-1.391,4.082c-0.324,0.945,0.562,1.301,2.098,1.539v0.563c-1.657-0.09-3.903-0.09-5.5,0v-0.563						c1.746-0.207,2.308-0.68,2.781-2.043l5.5-15.906h1.183L28.535,50.547z M17.918,45.727h6.594l-3.399-9.285L17.918,45.727z						M46.457,47.648h0.738c-0.652,2.543-2.425,5.266-6.652,5.266c-4.793,0-8.223-4.348-8.223-9.641c0-5.383,3.164-9.523,8.016-9.523						c2.066,0,2.512,0.504,4.375,0.504h0.621c0.383,1.656,0.797,3.137,1.625,4.969h-0.945c-1.211-3.074-2.957-4.82-6.446-4.82						c-2.011,0-4.941,1.625-4.941,8.043c0,5.887,2.574,9.672,6.004,9.672C43.766,52.117,45.508,50.547,46.457,47.648L46.457,47.648z						M65.32,34.785c-1.508,0.18-2.066,0.355-2.066,1.094v15.055c0,0.738,0.558,0.914,2.066,1.094v0.563c-2.039-0.09-4.226-0.09-6.265,0						v-0.563c1.507-0.18,2.066-0.355,2.066-1.094v-7.188h-8.394v7.188c0,0.738,0.558,0.914,2.066,1.094v0.563						c-2.039-0.09-4.227-0.09-6.266,0v-0.563c1.508-0.18,2.067-0.355,2.067-1.094V35.879c0-0.738-0.559-0.914-2.067-1.094v-0.559						c2.039,0.086,4.227,0.086,6.266,0v0.559c-1.508,0.18-2.066,0.355-2.066,1.094v7.188h8.394v-7.188c0-0.738-0.559-0.914-2.066-1.094						v-0.559c2.039,0.086,4.226,0.086,6.265,0V34.785z M81.23,47.648h0.743c-0.653,2.543-2.426,5.266-6.657,5.266						c-4.789,0-8.218-4.348-8.218-9.641c0-5.383,3.164-9.523,8.011-9.523c2.071,0,2.516,0.504,4.379,0.504h0.621						c0.383,1.656,0.797,3.137,1.625,4.969h-0.945c-1.215-3.074-2.957-4.82-6.449-4.82c-2.008,0-4.938,1.625-4.938,8.043						c0,5.887,2.575,9.672,6.004,9.672C78.539,52.117,80.285,50.547,81.23,47.648L81.23,47.648z M100.098,34.785						c-1.508,0.18-2.071,0.355-2.071,1.094v15.055c0,0.738,0.563,0.914,2.071,1.094v0.563c-2.039-0.09-4.227-0.09-6.27,0v-0.563						c1.508-0.18,2.07-0.355,2.07-1.094v-7.188H87.5v7.188c0,0.738,0.562,0.914,2.07,1.094v0.563c-2.039-0.09-4.226-0.09-6.269,0v-0.563						c1.508-0.18,2.07-0.355,2.07-1.094V35.879c0-0.738-0.562-0.914-2.07-1.094v-0.559c2.043,0.086,4.229,0.086,6.269,0v0.559						c-1.508,0.18-2.07,0.355-2.07,1.094v7.188h8.398v-7.188c0-0.738-0.562-0.914-2.07-1.094v-0.559c2.043,0.086,4.231,0.086,6.27,0						V34.785z M119.41,34.785c-1.512,0.18-2.07,0.355-2.07,1.094v15.055c0,0.738,0.559,0.914,2.07,1.094v0.563						c-2.043-0.09-3.582-0.09-4.703,0v-0.563c0.383-0.324,0.504-0.711,0.504-1.094v-1.629c-0.828,1.629-2.813,3.578-6.094,3.578						c-3.312,0-5.765-2.363-5.765-5.883V35.879c0-0.738-0.563-0.914-2.071-1.094v-0.559c2.039,0.086,4.317,0.086,6.36,0v0.559						c-1.512,0.18-2.071,0.355-2.071,1.094V47.09c0,2.926,1.625,4.906,4.227,4.906c2.66,0,4.672-2.156,5.414-3.754V35.879						c0-0.738-0.563-0.914-2.07-1.094v-0.559c2.039,0.086,4.227,0.086,6.27,0V34.785z M131.207,34.227c1.953,0.027,3.902,0.027,5.855,0						v0.559c-2.129,0.063-2.633,0.594-3.047,1.391l-4.375,8.488v6.27c0,0.738,0.563,0.914,2.07,0.977v0.68c-2.012-0.09-4.23-0.09-6.27,0						v-0.563c1.508-0.18,2.07-0.355,2.07-1.094v-6.211l-4.879-8.871c-0.328-0.594-0.887-1.004-2.336-1.066v-0.559						c2.129,0.027,4.168,0.027,6.27,0v0.559c-1.512,0.063-1.926,0.473-1.598,1.066l4.285,7.953l3.965-7.688						c0.441-0.828,0.09-1.27-2.012-1.332V34.227z M150.605,48.27h0.652c-0.473,1.539-0.652,2.84-0.859,4.262h-12.152v-0.742						c1.508-0.176,2.012-0.293,2.012-1.035V35.852c0-0.738-0.504-0.945-2.012-1.066v-0.559h11.68c0.383,0,0.445,0.086,0.504,0.531						l0.324,2.957h-0.563l-0.297-0.621c-0.738-1.539-1.773-2.16-3.133-2.16h-4.199c-0.117,0-0.176,0.059-0.176,0.18v7.836h4.227						c1.48,0,1.656-0.887,1.922-2.043h0.621c-0.148,1.57-0.148,3.195,0,4.734h-0.621c-0.266-1.156-0.473-1.984-1.922-1.984h-4.227v8.016						c0,0.09,0.059,0.176,0.176,0.176h4.109c1.57,0,2.457-0.621,2.988-1.715L150.605,48.27z M163.617,34.227						c1.895,0.086,3.816,0.086,5.766,0v0.559c-1.891,0.207-2.512,0.355-2.512,1.094V52.59h-0.531l-10.41-16.383v14.727						c0,0.738,0.621,0.887,2.426,1.094v0.563c-1.895-0.09-3.785-0.09-5.77,0v-0.563c2.012-0.207,2.543-0.355,2.543-1.094V35.941						c0-0.859-0.68-0.977-2.188-1.156v-0.559c1.449,0.086,2.871,0.086,4.348,0l8.781,13.957V35.879c0-0.738-0.531-0.887-2.453-1.094						V34.227z M183.637,33.898h0.324l-0.973,3.992h-0.594c0.18-2.039,0.148-3.016-1.152-3.016h-2.926v16.059						c0,0.738,0.559,0.914,2.066,1.094v0.563c-2.039-0.09-4.227-0.09-6.266,0v-0.563c1.508-0.18,2.066-0.355,2.066-1.094V34.875h-2.543						c-1.301,0-1.594,0.504-2.836,3.016h-0.535l1.094-3.992h0.328c0.621,0.207,0.914,0.328,2.188,0.328h7.539						C182.719,34.227,183.016,34.105,183.637,33.898L183.637,33.898z M200.344,50.547c0.27,0.801,0.207,1.273,2.457,1.48v0.563						c-2.012-0.09-4.258-0.09-6.27,0v-0.563c2.484-0.238,1.832-0.711,1.391-1.895l-1.363-3.727h-7.066l-1.391,4.082						c-0.324,0.945,0.563,1.301,2.102,1.539v0.563c-1.656-0.09-3.906-0.09-5.5,0v-0.563c1.742-0.207,2.305-0.68,2.777-2.043l5.5-15.906						h1.184L200.344,50.547z M189.73,45.727h6.594l-3.402-9.285L189.73,45.727z M214.449,34.227c1.953,0.027,3.906,0.027,5.855,0v0.559						c-2.129,0.063-2.629,0.594-3.043,1.391l-4.379,8.488v6.27c0,0.738,0.563,0.914,2.07,0.977v0.68c-2.012-0.09-4.227-0.09-6.27,0						v-0.563c1.508-0.18,2.07-0.355,2.07-1.094v-6.211l-4.879-8.871c-0.324-0.594-0.887-1.004-2.336-1.066v-0.559						c2.129,0.027,4.168,0.027,6.27,0v0.559c-1.508,0.063-1.922,0.473-1.598,1.066l4.289,7.953l3.961-7.688						c0.445-0.828,0.09-1.27-2.012-1.332V34.227z M214.449,34.227"></path>
+                        <path fill="#468071" d="M71.984,64.734c-0.023,0-0.046-0.012-0.07-0.027c-0.023-0.02-0.039-0.043-0.047-0.066l-0.238-0.82h-1.371						l-0.238,0.82c-0.008,0.023-0.024,0.047-0.047,0.066c-0.02,0.016-0.043,0.027-0.071,0.027h-0.531c-0.027,0-0.051-0.012-0.07-0.027						c-0.024-0.02-0.031-0.043-0.024-0.066l1.215-4.105c0.008-0.02,0.02-0.039,0.031-0.063c0.012-0.02,0.032-0.027,0.055-0.027h0.723						c0.043,0,0.074,0.027,0.094,0.086l1.21,4.109c0.008,0.023,0,0.047-0.019,0.066c-0.02,0.016-0.043,0.027-0.066,0.027H71.984z						M70.941,61.504L70.48,63.07h0.926L70.941,61.504z M79.918,64.672c-0.023,0.023-0.051,0.039-0.078,0.047						c-0.028,0.012-0.055,0.016-0.082,0.016h-1.582c-0.043,0-0.074-0.008-0.094-0.016c-0.02-0.012-0.039-0.027-0.066-0.055l-0.348-0.344						c-0.031-0.027-0.047-0.055-0.055-0.074c-0.004-0.023-0.008-0.047-0.008-0.066v-0.625c0-0.02,0.008-0.039,0.024-0.059						c0.019-0.02,0.039-0.027,0.062-0.027h0.567c0.023,0,0.043,0.008,0.058,0.027c0.02,0.02,0.028,0.039,0.028,0.059v0.441h1.097						c0.008,0,0.02-0.004,0.032-0.02l0.101-0.098c0.016-0.008,0.021-0.023,0.021-0.043v-0.719c0-0.016-0.004-0.027-0.021-0.043						l-0.097-0.098c-0.012-0.012-0.028-0.016-0.043-0.016h-1.278c-0.011,0-0.031-0.004-0.054-0.016						c-0.028-0.008-0.055-0.023-0.086-0.055l-0.348-0.344c-0.023-0.023-0.043-0.047-0.051-0.074c-0.008-0.027-0.012-0.055-0.012-0.078						v-1.379c0-0.023,0.004-0.047,0.012-0.074c0.008-0.031,0.028-0.059,0.055-0.086l0.344-0.344c0.023-0.02,0.043-0.035,0.058-0.047						c0.021-0.012,0.055-0.016,0.103-0.016h1.582c0.027,0,0.054,0.004,0.086,0.016c0.031,0.012,0.054,0.027,0.074,0.047l0.344,0.344						c0.035,0.035,0.054,0.066,0.058,0.09c0.008,0.02,0.012,0.043,0.012,0.07v0.645c0,0.055-0.031,0.086-0.086,0.086H79.68						c-0.059,0-0.086-0.031-0.086-0.086v-0.473h-1.078c-0.02,0-0.036,0.004-0.051,0.016l-0.106,0.098						c-0.011,0.012-0.015,0.023-0.015,0.043v0.715c0,0.016,0.004,0.031,0.015,0.043l0.106,0.102c0.012,0.016,0.027,0.02,0.051,0.02						h1.242c0.066,0,0.121,0.02,0.16,0.063l0.344,0.344c0.047,0.047,0.07,0.102,0.07,0.16v1.371c0,0.063-0.023,0.117-0.07,0.16						L79.918,64.672z M84.832,64.672c-0.039,0.039-0.109,0.063-0.207,0.063H83.07c-0.011,0-0.031-0.004-0.058-0.012						c-0.028-0.004-0.055-0.023-0.082-0.051l-0.352-0.352c-0.027-0.027-0.043-0.055-0.051-0.082c-0.004-0.027-0.007-0.047-0.007-0.059						V61c0-0.016,0.003-0.035,0.007-0.063c0.008-0.027,0.024-0.055,0.051-0.082l0.352-0.344c0.023-0.023,0.047-0.043,0.07-0.051						s0.051-0.012,0.09-0.012h1.582c0.023,0,0.051,0.004,0.082,0.012c0.027,0.008,0.055,0.027,0.078,0.051l0.344,0.344						c0.019,0.02,0.035,0.043,0.051,0.07c0.011,0.027,0.015,0.055,0.015,0.09v3.145c0,0.043-0.004,0.074-0.015,0.098						c-0.016,0.023-0.032,0.043-0.051,0.063L84.832,64.672z M84.488,63.91c0.012-0.012,0.02-0.027,0.02-0.043v-2.523						c0-0.004-0.004-0.008-0.004-0.016c-0.004-0.008-0.008-0.016-0.016-0.027l-0.105-0.098c-0.012-0.012-0.024-0.016-0.035-0.016h-0.926						c-0.016,0-0.031,0.004-0.043,0.016l-0.106,0.098c-0.011,0.016-0.019,0.027-0.019,0.043v2.523c0,0.016,0.008,0.031,0.019,0.043						l0.086,0.086h1.043L84.488,63.91z M89.758,64.672c-0.02,0.02-0.043,0.035-0.063,0.047c-0.019,0.008-0.054,0.016-0.097,0.016h-1.602						c-0.023,0-0.047-0.004-0.066-0.012c-0.024-0.004-0.047-0.023-0.075-0.051l-0.351-0.352c-0.024-0.023-0.039-0.047-0.047-0.07						c-0.008-0.02-0.012-0.047-0.012-0.07v-3.164c0-0.066,0.02-0.121,0.059-0.16l0.351-0.344c0.024-0.023,0.051-0.043,0.075-0.051						c0.027-0.008,0.054-0.012,0.086-0.012h1.582c0.031,0,0.062,0.004,0.086,0.012c0.023,0.008,0.05,0.027,0.074,0.051l0.344,0.344						c0.023,0.023,0.043,0.047,0.05,0.063c0.012,0.02,0.016,0.051,0.016,0.098v0.656c0,0.055-0.027,0.086-0.086,0.086H89.52						c-0.059,0-0.086-0.031-0.086-0.086v-0.328c0-0.016-0.008-0.027-0.02-0.043l-0.105-0.098c-0.02-0.012-0.032-0.016-0.036-0.016						h-0.921c-0.02,0-0.036,0.004-0.047,0.016l-0.106,0.098c-0.011,0.016-0.019,0.027-0.019,0.043v2.512						c0,0.023,0.008,0.043,0.019,0.055l0.086,0.086h1.043l0.086-0.086c0.012-0.012,0.02-0.027,0.02-0.043v-0.344						c0-0.023,0.007-0.047,0.023-0.063c0.016-0.02,0.035-0.027,0.063-0.027h0.562c0.023,0,0.047,0.008,0.063,0.027						c0.015,0.016,0.023,0.039,0.023,0.063v0.652c0,0.027-0.004,0.051-0.012,0.07c-0.008,0.023-0.027,0.047-0.054,0.074L89.758,64.672z						M92.406,64.734c-0.058,0-0.086-0.031-0.086-0.086v-4.113c0-0.059,0.028-0.086,0.086-0.086h0.563c0.058,0,0.086,0.027,0.086,0.086						v4.113c0,0.055-0.028,0.086-0.086,0.086H92.406z M97.742,64.734c-0.023,0-0.047-0.012-0.07-0.027						c-0.024-0.02-0.039-0.043-0.047-0.066l-0.238-0.82h-1.371l-0.239,0.82c-0.007,0.023-0.023,0.047-0.047,0.066						c-0.019,0.016-0.042,0.027-0.07,0.027h-0.531c-0.027,0-0.051-0.012-0.07-0.027c-0.024-0.02-0.032-0.043-0.024-0.066l1.215-4.105						c0.008-0.02,0.02-0.039,0.031-0.063c0.012-0.02,0.031-0.027,0.055-0.027h0.726c0.04,0,0.071,0.027,0.09,0.086l1.211,4.109						c0.008,0.023,0,0.047-0.019,0.066c-0.021,0.016-0.043,0.027-0.067,0.027H97.742z M96.699,61.504l-0.461,1.566h0.926L96.699,61.504z						M100.426,64.734c-0.055,0-0.086-0.031-0.086-0.086v-4.125c0-0.02,0.012-0.039,0.027-0.051c0.02-0.016,0.039-0.023,0.059-0.023						h0.565c0.021,0,0.039,0.008,0.06,0.023c0.015,0.012,0.027,0.031,0.027,0.051v3.473h1.809c0.058,0,0.086,0.027,0.086,0.086v0.566						c0,0.055-0.028,0.086-0.086,0.086H100.426z M108.172,64.734c-0.059,0-0.086-0.031-0.086-0.086v-4.113						c0-0.059,0.027-0.086,0.086-0.086h2.226c0.059,0,0.086,0.027,0.086,0.086v0.566c0,0.02-0.007,0.039-0.023,0.059						c-0.016,0.016-0.035,0.027-0.063,0.027h-1.574v1.035h1.246c0.02,0,0.039,0.008,0.055,0.023c0.02,0.02,0.031,0.039,0.031,0.063						v0.566c0,0.023-0.011,0.043-0.031,0.059c-0.016,0.02-0.035,0.027-0.055,0.027h-1.246v1.035h1.574c0.059,0,0.086,0.027,0.086,0.086						v0.566c0,0.055-0.027,0.086-0.086,0.086H108.172z M114.496,64.734c-0.023,0-0.047-0.012-0.07-0.027						c-0.023-0.02-0.039-0.039-0.047-0.059l-1.074-2.652v2.652c0,0.055-0.027,0.086-0.086,0.086h-0.563						c-0.059,0-0.086-0.031-0.086-0.086v-4.113c0-0.059,0.027-0.086,0.086-0.086h0.746c0.043,0,0.074,0.027,0.094,0.086l0.953,2.461						l0.035,0.172v-2.633c0-0.059,0.027-0.086,0.086-0.086h0.563c0.059,0,0.086,0.027,0.086,0.086v4.113						c0,0.055-0.027,0.086-0.086,0.086H114.496z M118.285,64.734c-0.02,0-0.035-0.008-0.051-0.023s-0.023-0.031-0.023-0.051v-3.473						h-0.855c-0.059,0-0.086-0.031-0.086-0.086v-0.566c0-0.059,0.027-0.086,0.086-0.086h2.457c0.023,0,0.043,0.008,0.059,0.023						c0.02,0.02,0.027,0.039,0.027,0.063v0.566c0,0.023-0.008,0.043-0.027,0.059c-0.016,0.02-0.035,0.027-0.059,0.027h-0.863v3.473						c0,0.047-0.023,0.074-0.066,0.074H118.285z M122.031,64.734c-0.055,0-0.086-0.031-0.086-0.086v-4.113						c0-0.059,0.031-0.086,0.086-0.086h2.23c0.055,0,0.086,0.027,0.086,0.086v0.566c0,0.02-0.008,0.039-0.027,0.059						c-0.016,0.016-0.035,0.027-0.059,0.027h-1.578v1.035h1.246c0.02,0,0.039,0.008,0.059,0.023c0.02,0.02,0.027,0.039,0.027,0.063						v0.566c0,0.023-0.008,0.043-0.027,0.059c-0.02,0.02-0.039,0.027-0.059,0.027h-1.246v1.035h1.578c0.055,0,0.086,0.027,0.086,0.086						v0.566c0,0.055-0.031,0.086-0.086,0.086H122.031z M128.57,64.734c-0.023,0-0.047-0.012-0.066-0.027						c-0.02-0.02-0.035-0.039-0.043-0.059l-0.605-1.492h-0.688v1.492c0,0.055-0.031,0.086-0.086,0.086h-0.566						c-0.055,0-0.086-0.031-0.086-0.086v-4.113c0-0.059,0.031-0.086,0.086-0.086h1.953c0.016,0,0.031,0.004,0.047,0.008						c0.02,0.004,0.035,0.008,0.055,0.016c0.016,0.004,0.035,0.02,0.059,0.039l0.344,0.344c0.031,0.031,0.051,0.07,0.059,0.109						c0.004,0.016,0.008,0.031,0.008,0.051v1.559c0,0.07-0.023,0.133-0.066,0.176l-0.363,0.363l0.621,1.527						c0.008,0.02,0.004,0.039-0.004,0.063c-0.012,0.02-0.035,0.031-0.07,0.031H128.57z M128.277,62.305						c0.012-0.016,0.02-0.027,0.02-0.043v-0.93c0-0.012-0.004-0.02-0.012-0.031l-0.105-0.098c-0.02-0.012-0.035-0.016-0.043-0.016						h-0.969v1.23h0.969c0.016,0,0.031-0.004,0.043-0.016L128.277,62.305z M131.332,64.734c-0.059,0-0.086-0.031-0.086-0.086v-4.113						c0-0.059,0.027-0.086,0.086-0.086h1.949c0.031,0,0.055,0.004,0.082,0.008c0.023,0.008,0.051,0.023,0.078,0.055l0.344,0.344						c0.031,0.035,0.051,0.066,0.059,0.094s0.008,0.047,0.008,0.066v1.574c0,0.063-0.02,0.117-0.066,0.16l-0.344,0.344						c-0.02,0.02-0.043,0.039-0.066,0.051s-0.055,0.016-0.094,0.016h-1.301v1.488c0,0.055-0.027,0.086-0.086,0.086H131.332z						M133.098,62.305c0.008-0.012,0.012-0.02,0.012-0.027v-0.945c0-0.012-0.004-0.02-0.012-0.031l-0.109-0.102						c-0.008-0.008-0.02-0.012-0.031-0.012h-0.977v1.23h0.977c0.016,0,0.027-0.004,0.035-0.012L133.098,62.305z M138.172,64.734						c-0.027,0-0.047-0.012-0.07-0.027c-0.02-0.02-0.035-0.039-0.043-0.059l-0.605-1.492h-0.688v1.492c0,0.055-0.027,0.086-0.086,0.086						h-0.566c-0.055,0-0.086-0.031-0.086-0.086v-4.113c0-0.059,0.031-0.086,0.086-0.086h1.953c0.016,0,0.031,0.004,0.051,0.008						c0.016,0.004,0.031,0.008,0.051,0.016c0.02,0.004,0.039,0.02,0.059,0.039l0.344,0.344c0.031,0.031,0.051,0.07,0.059,0.109						c0.008,0.016,0.008,0.031,0.008,0.051v1.559c0,0.07-0.023,0.133-0.066,0.176l-0.363,0.363l0.621,1.527						c0.008,0.02,0.008,0.039-0.004,0.063c-0.012,0.02-0.035,0.031-0.07,0.031H138.172z M137.875,62.305						c0.012-0.016,0.02-0.027,0.02-0.043v-0.93c0-0.012-0.004-0.02-0.012-0.031l-0.105-0.098c-0.02-0.012-0.035-0.016-0.043-0.016						h-0.969v1.23h0.969c0.016,0,0.031-0.004,0.043-0.016L137.875,62.305z M140.93,64.734c-0.059,0-0.086-0.031-0.086-0.086v-4.113						c0-0.059,0.027-0.086,0.086-0.086h0.563c0.059,0,0.086,0.027,0.086,0.086v4.113c0,0.055-0.027,0.086-0.086,0.086H140.93z						M146.105,64.672c-0.023,0.023-0.051,0.039-0.078,0.047c-0.031,0.012-0.055,0.016-0.082,0.016h-1.582						c-0.043,0-0.078-0.008-0.094-0.016c-0.02-0.012-0.043-0.027-0.066-0.055l-0.348-0.344c-0.031-0.027-0.047-0.055-0.055-0.074						c-0.004-0.023-0.008-0.047-0.008-0.066v-0.625c0-0.02,0.008-0.039,0.023-0.059s0.039-0.027,0.063-0.027h0.563						c0.027,0,0.047,0.008,0.063,0.027s0.023,0.039,0.023,0.059v0.441h1.102c0.008,0,0.016-0.004,0.027-0.02l0.105-0.098						c0.012-0.008,0.02-0.023,0.02-0.043v-0.719c0-0.016-0.008-0.027-0.02-0.043l-0.098-0.098c-0.012-0.012-0.027-0.016-0.043-0.016						h-1.277c-0.012,0-0.031-0.004-0.059-0.016c-0.023-0.008-0.051-0.023-0.082-0.055l-0.348-0.344						c-0.027-0.023-0.043-0.047-0.051-0.074s-0.012-0.055-0.012-0.078v-1.379c0-0.023,0.004-0.047,0.012-0.074						c0.008-0.031,0.027-0.059,0.055-0.086l0.344-0.344c0.02-0.02,0.039-0.035,0.059-0.047s0.051-0.016,0.102-0.016h1.582						c0.027,0,0.055,0.004,0.086,0.016c0.027,0.012,0.055,0.027,0.074,0.047l0.344,0.344c0.035,0.035,0.051,0.066,0.059,0.09						c0.008,0.02,0.008,0.043,0.008,0.07v0.645c0,0.055-0.027,0.086-0.086,0.086h-0.563c-0.059,0-0.086-0.031-0.086-0.086v-0.473h-1.082						c-0.016,0-0.031,0.004-0.047,0.016l-0.105,0.098c-0.012,0.012-0.02,0.023-0.02,0.043v0.715c0,0.016,0.008,0.031,0.02,0.043						l0.105,0.102c0.012,0.016,0.027,0.02,0.047,0.02h1.246c0.066,0,0.121,0.02,0.16,0.063l0.344,0.344						c0.047,0.047,0.066,0.102,0.066,0.16v1.371c0,0.063-0.02,0.117-0.066,0.16L146.105,64.672z M148.816,64.734						c-0.059,0-0.086-0.031-0.086-0.086v-4.113c0-0.059,0.027-0.086,0.086-0.086h2.227c0.059,0,0.086,0.027,0.086,0.086v0.566						c0,0.02-0.008,0.039-0.023,0.059c-0.016,0.016-0.039,0.027-0.063,0.027h-1.578v1.035h1.246c0.023,0,0.043,0.008,0.059,0.023						c0.02,0.02,0.027,0.039,0.027,0.063v0.566c0,0.023-0.008,0.043-0.027,0.059c-0.016,0.02-0.035,0.027-0.059,0.027h-1.246v1.035						h1.578c0.059,0,0.086,0.027,0.086,0.086v0.566c0,0.055-0.027,0.086-0.086,0.086H148.816z M148.816,64.734"></path>
+                      </g>
+                    </svg></a>
+            <ul class="cities">
+              <li><a href="#" title="Tp. Hồ Chí Minh">Tp. Hồ Chí Minh</a>
+              </li>
+              <li><a href="#" title="Tp. Hà Nội">Tp. Hà Nội</a>
+              </li>
+              <li><a href="#" title="Tp. Đà Nẵng">Tp. Đà Nẵng</a>
+              </li>
+              <li><a href="#" title="Tp. Cần Thơ">Tp. Cần Thơ</a>
+              </li>
+              <li><a href="#" title="Tp. Thái Nguyên">Tp. Thái Nguyên</a>
+              </li>
+            </ul>
+            <ul class="support">
+              <li><a href="#" title="Quyền riêng tư">Quyền riêng tư</a>
+              </li>
+              <li><a href="#" title="Điều khoản sử dụng">Điều khoản sử dụng</a>
+              </li>
+              <li><a href="#" title="Hotline 0888 63 7786">Hotline 0888 63 7786</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="grid">
+            <p class="text">Copyright © Sachchuyentay</p>
+            <div class="social">
+              <div class="icon icon--fb">
+                <div class="icon__inner">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewbox="0 0 23.936 51.856" enable-background="new 0 0 23.936 51.856" xml:space="preserve">
+                    <path fill="#EEEBE3" d="M5.432,51.856h10.442V25.708h7.285l0.777-8.755h-8.063c0,0,0-3.269,0-4.986c0-2.064,0.415-2.88,2.411-2.88							c1.605,0,5.651,0,5.651,0V0c0,0-5.959,0-7.23,0C8.935,0,5.432,3.422,5.432,9.973c0,5.706,0,6.98,0,6.98H0v8.865h5.432V51.856z"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="icon icon--tt">
+                <div class="icon__inner">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewbox="0 0 45.71 37.148" enable-background="new 0 0 45.71 37.148" xml:space="preserve">
+                    <path fill="#EEEBE3" d="M0,32.933c4.15,2.662,9.08,4.215,14.375,4.215c17.412,0,27.248-14.707,26.656-27.897							c1.831-1.32,3.422-2.972,4.679-4.854c-1.683,0.746-3.49,1.25-5.386,1.476c1.936-1.158,3.422-2.996,4.122-5.188							c-1.812,1.075-3.819,1.856-5.954,2.277C36.781,1.138,34.345,0,31.646,0c-6.053,0-10.501,5.648-9.135,11.515							C14.717,11.124,7.808,7.39,3.183,1.715c-2.457,4.216-1.274,9.731,2.902,12.521c-1.538-0.048-2.986-0.472-4.25-1.174							c-0.101,4.346,3.012,8.409,7.522,9.314c-1.321,0.36-2.766,0.44-4.234,0.16c1.191,3.728,4.655,6.437,8.759,6.513							C9.942,32.142,4.976,33.521,0,32.933z"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="icon icon--pin">
+                <div class="icon__inner">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewbox="0 0 39.44 50.947" enable-background="new 0 0 39.44 50.947" xml:space="preserve">
+                    <path fill="#EEEBE3" d="M5.993,29.459c0.669,0.273,1.271,0.011,1.465-0.73c0.135-0.514,0.455-1.811,0.598-2.35							c0.197-0.735,0.12-0.992-0.422-1.63c-1.178-1.391-1.931-3.192-1.931-5.741c0-7.395,5.533-14.015,14.408-14.015							c7.858,0,12.176,4.802,12.176,11.216c0,8.437-3.734,15.558-9.277,15.558c-3.063,0-5.353-2.532-4.62-5.636							c0.882-3.708,2.584-7.708,2.584-10.385c0-2.396-1.285-4.394-3.946-4.394c-3.13,0-5.645,3.238-5.645,7.575							c0,2.762,0.935,4.631,0.935,4.631s-3.203,13.57-3.765,15.946c-1.118,4.731-0.169,10.533-0.087,11.119							c0.048,0.35,0.493,0.43,0.695,0.17c0.289-0.378,4.017-4.98,5.282-9.578c0.359-1.301,2.06-8.043,2.06-8.043							c1.016,1.939,3.988,3.646,7.147,3.646c9.408,0,15.79-8.575,15.79-20.055C39.44,8.084,32.089,0,20.915,0C7.011,0,0,9.968,0,18.28							C0,23.314,1.906,27.792,5.993,29.459z"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="icon icon--gg">
+                <div class="icon__inner">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewbox="0 0 60.543 37.272" enable-background="new 0 0 60.543 37.272" xml:space="preserve">
+                    <g>
+                      <path fill="#EEEBE3" d="M35.634,17.518H18.303l0.021,4.964h11.686c-1.382,6.044-5.647,9.75-11.372,9.75								c-7.509,0-13.597-6.088-13.597-13.596c0-7.509,6.088-13.596,13.597-13.596c3.57,0,6.817,1.378,9.243,3.629l3.835-3.306								C28.351,2.048,23.733,0,18.637,0C8.344,0,0,8.344,0,18.636s8.344,18.636,18.637,18.636c9.884,0,17.026-7.538,17.026-17.831								L35.634,17.518z"></path>
+                      <g>
+                        <rect x="41.67" y="17.724" fill="#EEEBE3" width="18.873" height="4.563"></rect>
+                        <rect x="48.824" y="10.569" fill="#EEEBE3" width="4.564" height="18.873"></rect>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <!-- build:js js/script.js-->
     <script defer src="js/l10n.js"></script>
